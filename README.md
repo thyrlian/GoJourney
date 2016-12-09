@@ -20,3 +20,6 @@ xyz
 # run - compile and run Go program
 go run xyz.go
 ```
+
+## Useful Links
+https://github.com/golang/go/wiki#getting-started-with-go
