@@ -25,7 +25,18 @@ xyz
 go run xyz.go
 ```
 
-## Formatting
+## Style
+
+### Naming Convention
+
+The visibility of a name outside a package is determined by whether its first character is upper case.
+
+```
+SomeFunction // exported, visible to public
+someFunction // unexported, visible within this package only
+```
+
+### Formatting
 
 gofmt (reformat) all package sources inside some directory
 
