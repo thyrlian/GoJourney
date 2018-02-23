@@ -1,6 +1,10 @@
 # GoJourney
 My journey of learning Go
 
+## GOPATH
+
+The `GOPATH` environment variable specifies the location of your workspace. If no `GOPATH` is set, it is assumed to be `$HOME/go` on Unix systems and `%USERPROFILE%\go` on Windows. If you want to use a custom location as your workspace, you can [set the `GOPATH` environment variable](https://github.com/golang/go/wiki/SettingGOPATH).
+
 ## Go Commands
 
 ```console
