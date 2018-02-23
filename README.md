@@ -25,6 +25,12 @@ xyz
 go run xyz.go
 ```
 
+## Formatting
+
+gofmt (reformat) all package sources inside some directory
+
+`go fmt <directory>/...`
+
 ## Useful Links
 
 * [Getting started with Go](https://github.com/golang/go/wiki#getting-started-with-go)
