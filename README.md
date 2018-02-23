@@ -31,7 +31,7 @@ go run xyz.go
 
 The visibility of a name outside a package is determined by whether its first character is upper case.
 
-```
+```go
 SomeFunction // exported, visible to public
 someFunction // unexported, visible within this package only
 ```
