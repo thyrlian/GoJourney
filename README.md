@@ -42,6 +42,28 @@ gofmt (reformat) all package sources inside some directory
 
 `go fmt <directory>/...`
 
+## Basics
+
+### Variables
+
+```go
+var a = "initial"
+// var declares 1 or more variables.
+
+var b, c int = 1, 2
+// You can declare multiple variables at once.
+
+var d = true
+// Go will infer the type of initialized variables.
+
+var e int
+// Variables declared without a corresponding initialization are zero-valued.
+
+f := "short"
+// equivalent to var f string = "short"
+// The := syntax is shorthand for declaring and initializing a variable.
+```
+
 ## Useful Links
 
 * [Getting started with Go](https://github.com/golang/go/wiki#getting-started-with-go)
