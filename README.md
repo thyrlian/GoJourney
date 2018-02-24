@@ -44,6 +44,10 @@ gofmt (reformat) all package sources inside some directory
 
 ## Basics
 
+### Package names
+
+The first statement in a Go source file must be `package name`, where name is the package's default name for imports.  All files in a package must use the same name.  Executable commands must always use `package main`.
+
 ### Variables
 
 ```go
