@@ -68,6 +68,17 @@ f := "short"
 // The := syntax is shorthand for declaring and initializing a variable.
 ```
 
+### Panic
+
+A `panic` typically means something went unexpectedly wrong. Mostly we use it to fail fast on errors that shouldn’t occur during normal operation, or that we aren’t prepared to handle gracefully. A common use of panic is to abort if a function returns an error value that we don’t know how to (or want to) handle.
+
+```go
+_, err := os.Create("/tmp/file")
+if err != nil {
+    panic(err)
+}
+```
+
 ## Useful Links
 
 * [Getting started with Go](https://github.com/golang/go/wiki#getting-started-with-go)
