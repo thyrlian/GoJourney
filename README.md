@@ -85,6 +85,30 @@ s := []int{}
 array[low : high] // a half-open range which includes the first element, but excludes the last one
 ```
 
+Arrays can be created using the following syntaxes:
+```go
+[N]Type
+[N]Type{value1, value2, ..., valueN}
+[...]Type{value1, value2, ..., valueN}
+```
+
+Slices can be created using the following syntaxes:
+```go
+make([]Type, length, capacity)
+make([]Type, length)
+[]Type{}
+[]Type{value1, value2, ..., valueN}
+```
+
+Diff:
+* Array
+  * fixed-length
+  * values
+* Slice
+  * dynamically-length
+  * references
+
+
 ### Panic
 
 A `panic` typically means something went unexpectedly wrong. Mostly we use it to fail fast on errors that shouldn’t occur during normal operation, or that we aren’t prepared to handle gracefully. A common use of panic is to abort if a function returns an error value that we don’t know how to (or want to) handle.
