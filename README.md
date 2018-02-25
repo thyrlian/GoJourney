@@ -108,6 +108,12 @@ Diff:
   * dynamically-length
   * references
 
+Delete element in slice using [`append`](https://golang.org/pkg/builtin/#append):
+```go
+// a is the slice
+// i is the index of the element to delete
+a = append(a[:i], a[i+1:]...)
+```
 
 ### Panic
 
