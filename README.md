@@ -68,6 +68,23 @@ f := "short"
 // The := syntax is shorthand for declaring and initializing a variable.
 ```
 
+### Slice
+
+Slice is a special data type that wraps on top of array. Slice can represent either entire array or portion of array as needed. An array has a fixed size. A slice, on the other hand, is a dynamically-sized, flexible view into the elements of an array. Unlike array which has its own storage, slice share the same storage as of the underlying array and hence multiple slice on same array will share same memory. Slice is created using built-in function make, as shown below:
+
+```go
+s := make([]int, length, capacity)
+```
+
+Initialization:
+```go
+s := make([]int, 0)
+// or
+s := []int{}
+// or
+array[low : high] // a half-open range which includes the first element, but excludes the last one
+```
+
 ### Panic
 
 A `panic` typically means something went unexpectedly wrong. Mostly we use it to fail fast on errors that shouldn’t occur during normal operation, or that we aren’t prepared to handle gracefully. A common use of panic is to abort if a function returns an error value that we don’t know how to (or want to) handle.
