@@ -1,6 +1,10 @@
 # GoJourney
 My journey of learning Go
 
+<a href="https://github.com/thyrlian/GoJourney/blob/master/gopher.png" target="_blank"><img src="https://github.com/thyrlian/GoJourney/blob/master/gopher.png" height="256"></a>
+
+gopher by [Takuya Ueda](https://twitter.com/tenntenn) is licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+
 ## GOPATH
 
 The `GOPATH` environment variable specifies the location of your workspace. If no `GOPATH` is set, it is assumed to be `$HOME/go` on Unix systems and `%USERPROFILE%\go` on Windows. If you want to use a custom location as your workspace, you can [set the `GOPATH` environment variable](https://github.com/golang/go/wiki/SettingGOPATH).
