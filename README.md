@@ -126,6 +126,11 @@ if err != nil {
 }
 ```
 
+## Attention & Surprise
+
+* Go is not really an object-oriented language. Use `struct` instead of class.
+* No generic types, you can use `interface{}` & `reflect` instead. Generics are convenient but they come at a cost in complexity in the type system and run-time.
+
 ## Useful Links
 
 * [Getting started with Go](https://github.com/golang/go/wiki#getting-started-with-go)
