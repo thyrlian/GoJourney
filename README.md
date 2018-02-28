@@ -134,6 +134,7 @@ if err != nil {
 
 * Go is not really an object-oriented language. Use `struct` instead of class.
 * No generic types, you can use `interface{}` & `reflect` instead. Generics are convenient but they come at a cost in complexity in the type system and run-time.
+* No ternary operator.
 
 ## Useful Links
 
