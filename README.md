@@ -119,6 +119,15 @@ Delete element in slice using [`append`](https://golang.org/pkg/builtin/#append)
 a = append(a[:i], a[i+1:]...)
 ```
 
+### Enums
+```go
+const ( // iota is reset to 0
+    Pass = iota // iota is 0
+    Fail = iota // iota is 1
+    Skip = iota // iota is 2
+)
+```
+
 ### Panic
 
 A `panic` typically means something went unexpectedly wrong. Mostly we use it to fail fast on errors that shouldn’t occur during normal operation, or that we aren’t prepared to handle gracefully. A common use of panic is to abort if a function returns an error value that we don’t know how to (or want to) handle.
