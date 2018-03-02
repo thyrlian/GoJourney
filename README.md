@@ -144,6 +144,25 @@ if err != nil {
 * Go is not really an object-oriented language. Use `struct` instead of class.
 * No generic types, you can use `interface{}` & `reflect` instead. Generics are convenient but they come at a cost in complexity in the type system and run-time.
 * No ternary operator.
+  ```go
+  var c int
+  if c = b; a > b {
+      c = a
+  }
+  // is equivalent to below
+  var c int
+  if a > b {
+      c = a
+  } else {
+      c = b
+  }
+  ```
+* Array / Slice instantiation with dynamically computed boundary at runtime is not allowed.
+  ```go
+  size := 8
+  var list [size]string
+  // non-constant array bound size
+  ```
 
 ## Useful Links
 
